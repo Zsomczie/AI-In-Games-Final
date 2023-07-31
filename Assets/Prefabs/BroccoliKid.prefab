@@ -168,7 +168,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7421053842010931534}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.15, y: -0.68, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 0
@@ -177,7 +177,7 @@ Transform:
   - {fileID: 7421053842492221032}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!195 &7421053842010931533
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -242,11 +242,11 @@ MonoBehaviour:
   isAttacking: 0
   damage: 0
   Health: 0
+  spriteRenderer: {fileID: 7421053841677193390}
+  navMeshAgent: {fileID: 0}
   kidPrefab: {fileID: 7421053842010931534}
   babyPrefab: {fileID: 5764857835558624861, guid: b279d3185fa9a634cada21d0868b15c2, type: 3}
   kidSpawnPoint: {fileID: 7421053842492221032}
-  spriteRenderer: {fileID: 7421053841677193390}
-  navMeshAgent: {fileID: 0}
 --- !u!1 &7421053842192798840
 GameObject:
   m_ObjectHideFlags: 0

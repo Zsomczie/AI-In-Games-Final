@@ -117,6 +117,7 @@ public class EnemyCabbage : Enemy
     {
         Vector2 stopPosition = transform.position;
         transform.position = stopPosition;
+        StopAllCoroutines();
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

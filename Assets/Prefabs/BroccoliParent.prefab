@@ -188,7 +188,7 @@ GameObject:
   - component: {fileID: 781081937245565042}
   - component: {fileID: 781081937245565043}
   m_Layer: 3
-  m_Name: Broccoli
+  m_Name: BroccoliParent
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -58,7 +58,7 @@ public class Enemy : MonoBehaviour
             currentMovementDelay = StartCoroutine(DestinationChangeDelay());
         }
 
-        else if (enemyType == EnemyType.broccoliParent || enemyType == EnemyType.broccoliKid || enemyType == EnemyType.broccoliBaby||enemyType==EnemyType.cabbage)
+        else if (enemyType == EnemyType.broccoliParent || enemyType == EnemyType.broccoliKid || enemyType == EnemyType.broccoliBaby)
         {
             // instantly make the broccolis and cabbages attack towards the player
             Collider2D playerCollider = Physics2D.OverlapCircle(transform.position, 30f, LayerMask.GetMask("Player"));
@@ -167,7 +167,7 @@ public class Enemy : MonoBehaviour
     protected virtual IEnumerator SpottingDelayAfterPlayerDetection()
     {
         yield return new WaitForSeconds(1f);
-
+        //detection animation here!!
         currentAttack = StartCoroutine(Attack());
     }
 
@@ -275,6 +275,7 @@ public class Enemy : MonoBehaviour
     public virtual void GameOver()
     {
         StopAllCoroutines();
+        navMeshAgent.isStopped = true;
     }
 }
 

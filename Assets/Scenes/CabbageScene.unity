@@ -2588,6 +2588,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6488897934681717416, guid: 4889baf15855fda43b74d2760d0ae69d, type: 3}
+      propertyPath: moveSpeed
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6488897934681717416, guid: 4889baf15855fda43b74d2760d0ae69d, type: 3}
+      propertyPath: detectionRadius
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6488897934681717421, guid: 4889baf15855fda43b74d2760d0ae69d, type: 3}
       propertyPath: m_Name
       value: Cabbage
