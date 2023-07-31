@@ -60,7 +60,7 @@ public class Enemy : MonoBehaviour
 
         else if (enemyType == EnemyType.broccoliParent || enemyType == EnemyType.broccoliKid || enemyType == EnemyType.broccoliBaby)
         {
-            // instantly make the broccolis and cabbages attack towards the player
+            // instantly make the broccolis attack towards the player
             Collider2D playerCollider = Physics2D.OverlapCircle(transform.position, 30f, LayerMask.GetMask("Player"));
 
             if (playerCollider != null)
